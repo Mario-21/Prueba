@@ -1,0 +1,44 @@
+/*foreach (Transform caja in enemyMove)
+        {
+            if (caja.position.x == -96 || caja.position.x == -55)
+            {
+                velocidad = -velocidad;
+                enemyMove.position += Vector3.down * 0.5f;
+                return;
+            }
+
+            /* tiempo += Time.deltaTime;
+             if (direccion == true)
+             {
+                 if (tiempo > mover)
+                 {
+                     enemyMove.Translate(Vector3.right * velocidad);
+
+                     tiempo = 0;
+                     movimiento = movimiento + 1;
+                     if (movimiento == 28)
+                     {
+                         enemyMove.Translate(new Vector3(0f, -1f, 0f) * velocidad);
+                         movimiento = 0;
+                         direccion = false;
+                         velocidad = velocidad + aumento;
+                     }
+                 }
+             }
+             if (direccion == false)
+             {
+                 if (tiempo > mover)
+                 {
+                     enemyMove.Translate(Vector3.left * velocidad);
+                     tiempo = 0;
+                     movimiento = movimiento + 1;
+                     if (movimiento == 28)
+                     {
+                         enemyMove.Translate(new Vector3(0f, -1f, 0f) * velocidad);
+                         movimiento = 0;
+                         direccion = true;
+                         velocidad = velocidad + aumento;
+                     }
+                 }
+
+             }
